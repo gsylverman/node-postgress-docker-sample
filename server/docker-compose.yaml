@@ -28,7 +28,8 @@ services:
     links:
       - postgres
     volumes:
-      - './:/src'
+      - ./:/app
+      - /app/node_modules
 volumes:
   db:
     driver: local
